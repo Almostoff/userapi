@@ -1,0 +1,28 @@
+GET http://localhost:3333/api/v1/users
+Accept: application/json
+
+###
+
+POST http://localhost:3333/api/v1/users
+Content-Type: application/json
+
+{
+  "display_name": "TestUserTHREE",
+  "email": "usersmailTHREE@gmail.ru"
+}
+
+###
+
+PATCH http://localhost:3333/api/v1/users/2
+Content-Type: application/json
+
+{
+  "display_name": "SimpleUser",
+  "email": "yahoo@yahoo.ru"
+}
+
+###
+
+DELETE http://localhost:3333/api/v1/users/2
+
+###
